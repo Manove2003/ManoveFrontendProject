@@ -74,7 +74,7 @@ const LoginSystem = ({ toggleView }) => {
       // Optionally, you can call an API to update the role here if needed
       updateRoleOnLogin();
 
-      navigate(`/welcome?token=${token}&role=${user.role}`); // Redirect to the welcome page
+      navigate(`/welcome?token=${token}&role=${updateRoleOnLogin()}`); // Redirect to the welcome page
     }
   }, [navigate]);
 
